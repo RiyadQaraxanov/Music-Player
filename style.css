@@ -1,0 +1,56 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 400px;
+}
+
+
+#progress .times,
+.card-footer,
+.volume-container,
+.modal-container,
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.volume-container i{
+    margin-right: 5px;
+}
+
+li.playing{
+    background-color: #0b5eb7;
+    color: #fff;
+}
+
+
+
+.modal-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 0;
+    opacity: 0;
+}
+.modal-container.show{
+    z-index: 2;
+    opacity: 1;
+}
+.modaL{
+    background-color: #fff;
+    width: 600px;
+
+}
